@@ -15,7 +15,10 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('id_admin');
+            $table->integer('total_price');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
