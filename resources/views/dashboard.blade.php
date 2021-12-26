@@ -83,6 +83,7 @@
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
+          </section>
         </div>
         <!-- /.row (main row) -->
       </div><!-- /.container-fluid -->

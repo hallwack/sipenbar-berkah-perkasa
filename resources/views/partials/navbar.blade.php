@@ -21,9 +21,12 @@
           <i class="fas fa-user-alt mr-2"></i> Setting Admin
         </a>
         <div class="dropdown-divider"></div>
-        <a href="#" class="dropdown-item">
-          <i class="fas fa-sign-out-alt mr-2"></i> Sign Out
-        </a>
+        <form action="{{ url('logout') }}" method="POST">
+          @csrf
+          <button type="submit" class="dropdown-item">
+            <i class="fas fa-sign-out-alt mr-2"></i> Sign Out
+          </button>
+        </form>
       </div>
     </li>
   </ul>
