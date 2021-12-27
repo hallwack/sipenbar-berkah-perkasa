@@ -40,6 +40,14 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="{{ url('admin/cashier') }}" class="nav-link">
+            <i class="nav-icon fas fa-cash-register"></i>
+            <p>
+             Cashier 
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="{{ url('admin/transaction') }}" class="nav-link">
             <i class="nav-icon fas fa-shopping-cart"></i>
             <p>

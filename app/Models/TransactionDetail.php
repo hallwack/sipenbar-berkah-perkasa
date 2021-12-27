@@ -11,6 +11,10 @@ class TransactionDetail extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $fillable = [
+        'id_product', 'id_transaction', 'quantity', 'subtotal_price'
+    ];
+
     public function product()
     {
         return $this->hasOne(Product::class);

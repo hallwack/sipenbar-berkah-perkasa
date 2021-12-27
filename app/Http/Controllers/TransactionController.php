@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Transaction;
+use App\Models\TransactionDetail;
 use Illuminate\Http\Request;
 
 class TransactionController extends Controller
@@ -13,7 +15,12 @@ class TransactionController extends Controller
      */
     public function index()
     {
-        //
+        $items = Transaction::all();
+        $detail = TransactionDetail::all();
+        return view('transaction.index', [
+            'items' => $items,
+            'details' => $detail
+        ]);
     }
 
     /**

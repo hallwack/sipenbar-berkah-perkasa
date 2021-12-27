@@ -11,6 +11,10 @@ class Transaction extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $fillable = [
+        'total_price', 'id_admin', 'customer'
+    ];
+
     public function admin()
     {
         return $this->hasOne(Admin::class);

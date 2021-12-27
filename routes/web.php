@@ -3,6 +3,7 @@
 use App\Http\Controllers\CashierController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,4 +34,5 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     });
     Route::resource('product', ProductController::class);
     Route::resource('cashier', CashierController::class);
+    Route::resource('transaction', TransactionController::class);
 });
